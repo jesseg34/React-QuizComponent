@@ -12,9 +12,7 @@ class QuizQuestion extends Component {
             this.setState({ incorrectAnswer: false })
             this.props.showNextQuestionHandler()
         } else {
-            this.setState((state) => {
-                this.setState({ incorrectAnswer: true })
-            })
+            this.setState({ incorrectAnswer: true })
         }
     }
 
